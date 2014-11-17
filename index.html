@@ -15,8 +15,14 @@
   <!-- Simple text rotator -->
   <link href="assets/css/simpletextrotator.css" rel="stylesheet">
 
+  <!-- Flex slider -->
+  <link href="assets/css/flexslider.css" rel="stylesheet">
+
   <!-- Font Awesome CSS -->
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- custom fonts css -->
+  <link href="assets/css/simple-line-icons.css" rel="stylesheet">
 
   <!-- Animate css -->
   <link href="assets/css/animate.css" rel="stylesheet">
@@ -80,6 +86,16 @@
 
         </div><!-- .row -->
           <div class="row">
+            <div class="col-sm-4 portfolio-item wow bounceInLeft">
+                <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/images/portfolio/home-twitter-0.jpg" class="img-responsive" alt="">
+                </a>
+            </div>
               <div class="col-sm-4 portfolio-item wow bounceInLeft">
                   <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                       <div class="caption">
@@ -530,7 +546,6 @@
                           <ol class="carousel-indicators">
                              <li data-target="#project4" data-slide-to="0" class="active"></li>
                              <li data-target="#project4" data-slide-to="1"></li>
-                             
                           </ol>   
                           <!-- Carousel items -->
                           <div class="carousel-inner">
@@ -558,8 +573,8 @@
                  <div class="container">
                    <div class="row">
                      <div class="col-md-7 col-sm-7 col-md-offset-1">
-                       <h4>Site internet de la radio RTL</h4>
-                       <p>Participation à l'intégration HTML/CSS du site et à la réalisation de projets d’évolutions fonctionnelles : Prototype, Wireframe, maquette graqhique. J'ai également était en charge de la déclinaison de l'identité visuelle sur différents supports.
+                       <h4 class="">Site internet de la radio RTL</h4>
+                       <p class="">Participation à l'intégration HTML/CSS du site et à la réalisation de projets d’évolutions fonctionnelles : Prototype, Wireframe, maquette graqhique. J'ai également était en charge de la déclinaison de l'identité visuelle sur différents supports.
                        </p>
                      </div>
                      <div class="col-md-4 col-sm-4">
@@ -671,11 +686,66 @@
                </div><!-- end modal-body -->
 
                <div class="modal-footer">
+
                  <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fermer</button>
                </div><!-- end modal-footer -->
 
              </div> <!-- end modal-content -->
             </div><!-- end Portfolio Modals 6 -->
+            <!-- 7 -->
+
+           <div id="portfolioModal7"  class="portfolio-modal modal fade" tabindex="1" role="dialog" aria-hidden="true">
+            <div id="toto "class="modal-content">
+              <div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
+              <div class="modal-body darker-bg">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-8 col-md-offset-2 dark-bg">
+                      
+                            <div class="flexslider" id="flex2">
+                              <ul class="slides">
+                                <li>
+                                  <img src="assets/images/portfolio/home-twitter-1.jpg">
+                                </li>
+                                <li>
+                                  <img src="assets/images/portfolio/home-twitter-2.jpg">
+                                </li>
+                                <li>
+                                  <img src="assets/images/portfolio/home-twitter-3.jpg">
+                                </li>
+                                <li>
+                                  <img src="assets/images/portfolio/home-twitter-4.jpg">
+                                </li>
+                                <li>
+                                  <img src="assets/images/portfolio/home-twitter-5.jpg">
+                                </li>
+                                <li>
+                                  <img src="assets/images/portfolio/home-twitter-6.jpg">
+                                </li>
+                              </ul>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-7 col-sm-7 col-md-offset-1">
+                    <h4>Redesign Twitter</h4>
+                    <p>Réalisation d'un redesign d'interface de la page de connexion de Twitter. Conception du design sur une largeur de 1170px/ 12 colonnes / Bootstrap. <span>Les points-clés de ce projet :</span> Design Flat + système de background « fullscreen » défilant.
+                    </p>
+                  </div>
+                  <div class="col-md-4 col-sm-4">
+                    <h4><i class="fa fa-folder"></i> Projet perso</h4>
+                    <h4><i class="fa fa-calendar"></i> Novembre 2014</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fermer</button>
+              </div>
+            </div>
+           </div>
 
     <!-- Javascript files -->
     <!-- jQuery -->
@@ -684,6 +754,8 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- Background slider -->
     <script src="assets/js/jquery.backstretch.min.js"></script>
+    <!-- flex slider -->
+    <script src="assets/js/jquery.flexslider-min.js"></script>
     <!-- Text rotator -->
     <script src="assets/js/jquery.simple-text-rotator.min.js"></script>
     <!-- WOW - Reveal Animations When You Scroll -->

@@ -35,6 +35,9 @@ a.active {
     color: #18bc9c;
 }
 
+.light-typo {color: #fff;}
+.light-bg {background: #fff;}
+.dark-bg {background: #18bc9c;}
 /* ---------------------------------------------- /*
  * Typography
 /* ---------------------------------------------- */
@@ -47,7 +50,7 @@ h5,
 h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    color: #000;
+    color: #333;
 }
 
 h1 {font-size: 5.5em;color: #fff;}
@@ -271,7 +274,6 @@ color: #C4C4C4;
     min-height: 100%;
     border: 0;
     border-radius: 0;
-	xbackground: #18bc9c;
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -321,9 +323,9 @@ color: #C4C4C4;
     transform: rotate(90deg);
 }
 
-.modal-header {background: #18bc9c;}
-.modal-body, .modal-footer {background: #fff;}
-.modal-body span {color: #18bc9c;}
+.modal-header, .darker-bg {background: #18bc9c;}
+.modal-footer {background: #fff;}
+.portfolio-modal span {color: #18bc9c;}
 
 /* ---------------------------------------------- /*
  * Preloader
@@ -395,6 +397,14 @@ color: #C4C4C4;
 }
 
 .carousel-control {background: transparent;}
+.carousel-custom {
+
+
+
+}
+
+
+
 .carousel-indicators li {margin:0;}
 .carousel-indicators li, .carousel-indicators .active {width: 15px; height: 15px;}
 .carousel-control .icon-next:before {}
@@ -491,3 +501,4 @@ fieldset[disabled] .btn-custom-1.active {
   margin: 5px 0;
   color: #fff;
 }
+  
