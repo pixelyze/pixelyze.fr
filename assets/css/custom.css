@@ -30,3 +30,7 @@ q {
 a[href^=tel] {
   text-decoration: inherit;
   color: inherit; }
+
+@media screen and (max-width: 320px) {
+  .brand {
+    font-size: 32px; } }

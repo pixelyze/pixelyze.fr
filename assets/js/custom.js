@@ -1,4 +1,14 @@
-(function($){
+$(document).ready(function(){
+
+
+
+	/*============================================
+	Page Preloader
+	==============================================*/
+	
+	$(window).load(function(){
+		$('#page-loader').fadeOut(500);
+	});
 
 
 	$(document).ready(function() {
@@ -7,9 +17,7 @@
 	  $(".button-collapse").sideNav();
 
 	});
-
 	
-
-
-
-})(jQuery);
+	
+	
+});
