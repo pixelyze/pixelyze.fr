@@ -9,21 +9,6 @@
   padding:70px 0;
 }
 
-.home {
-  h5 {
-    font-weight: 400;
-    font-family: $font-family;
-    a {
-      color: #fff;
-      text-decoration: none;
-      &:hover {
-        color: #fff;
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
 .first {
   margin-bottom:30px;
 }
@@ -57,8 +42,8 @@ footer {
 
 /* Skills
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.uxdesign, .uxdesign-img {
-  margin-bottom: 2.5rem;
+.uxdesign, .uxdesign img {
+  margin-bottom: 15px;
 }
 
 /* Shared
@@ -93,7 +78,7 @@ footer {
   body {
     font-size: 1.8em;
   }
-    .uxdesign-img {
+    .uxdesign img {
     margin-bottom: 0;
   }
 
