@@ -4363,14 +4363,13 @@ hr {
   display: table;
   clear: both; }
 
+/* Global
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .home {
   padding: 15px 0; }
 
 .skills {
   padding: 70px 0; }
-
-footer {
-  padding-top: 2.5rem; }
 
 .home h5 {
   font-weight: 400;
@@ -4383,7 +4382,10 @@ footer {
       text-decoration: underline; }
 
 .first {
-  padding-bottom: 30px; }
+  margin-bottom: 30px; }
+
+footer {
+  padding-top: 2.5rem; }
 
 /* Social
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -4421,7 +4423,7 @@ footer {
 /* Plus grand que 550 */
 @media (min-width: 550px) {
   .first {
-    padding-bottom: 0px; }
+    margin-bottom: 0px; }
 
   .home, .skills {
     padding: 170px 0; } }
