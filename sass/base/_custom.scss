@@ -1,0 +1,78 @@
+
+section {
+  padding:130px 0;
+}
+
+footer {
+  padding-top:2.5rem;
+}
+
+h5 {
+  font-weight: 400;
+  font-family: $font-family;
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+}
+
+.first {
+  padding-bottom:30px;
+}
+
+/* Social icons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.social {
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  border: 3px solid #fff;
+  color:#fff;
+  text-align:center;
+  @include border-radius(50%, 50%);
+
+}
+
+/* Skills
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.uxdesign, .uxdesign-img {
+  margin-bottom: 2.5rem;
+}
+
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button {
+  @include border-radius(100px);
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .first {
+    padding-bottom:0px;
+  }
+  section {
+    padding:170px 0;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  body {
+    font-size: 1.8em;
+  }
+    .uxdesign-img {
+    margin-bottom: 0;
+  }
+
+}
