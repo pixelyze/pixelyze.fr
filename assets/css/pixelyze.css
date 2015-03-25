@@ -4385,9 +4385,15 @@ footer {
 .first {
   padding-bottom: 30px; }
 
-/* Social icons
+/* Social
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.social {
+.socials a {
+  color: #fff;
+  text-decoration: none; }
+  .socials a:hover {
+    color: #fff;
+    text-decoration: underline; }
+.socials i {
   width: 1.7em;
   height: 1.7em;
   line-height: 1.7em;
@@ -4415,11 +4421,6 @@ footer {
   .first {
     padding-bottom: 0px; }
 
-  .social {
-    width: 1.7em;
-    height: 1.7em;
-    line-height: 1.7em; }
-
   .home, .skills {
     padding: 170px 0; } }
 /* Plus grand que 750 */
@@ -4434,9 +4435,4 @@ footer {
     font-size: 1.8em; }
 
   .uxdesign-img {
-    margin-bottom: 0; }
-
-  .social {
-    width: 2em;
-    height: 2em;
-    line-height: 2em; } }
+    margin-bottom: 0; } }

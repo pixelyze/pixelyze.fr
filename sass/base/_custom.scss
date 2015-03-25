@@ -7,6 +7,7 @@
   padding:70px 0;
 }
 
+
 footer {
   padding-top:2.5rem;
 }
@@ -30,18 +31,28 @@ footer {
   padding-bottom:30px;
 }
 
-/* Social icons
+/* Social
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.social {
-  width: 1.7em;
-  height: 1.7em;
-  line-height: 1.7em;
-  border: 3px solid #fff;
-  color:#fff;
-  text-align:center;
-  @include border-radius(50%, 50%);
+.socials {
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+  i {
+    width: 1.7em;
+    height: 1.7em;
+    line-height: 1.7em;
+    border: 3px solid #fff;
+    color:#fff;
+    text-align:center;
+    @include border-radius(50%, 50%);
+  }
 }
+
 
 /* Skills
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -59,11 +70,6 @@ footer {
 @media (min-width: 550px) {
   .first {
     padding-bottom:0px;
-  }
-  .social {
-    width: 1.7em;
-    height: 1.7em;
-    line-height: 1.7em;
   }
   .home, .skills {
     padding:170px 0;
@@ -87,11 +93,6 @@ footer {
   }
     .uxdesign-img {
     margin-bottom: 0;
-  }
-  .social {
-    width: 2em;
-    height: 2em;
-    line-height: 2em;
   }
 
 }
