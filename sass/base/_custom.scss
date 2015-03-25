@@ -52,7 +52,6 @@ footer {
     text-align:center;
     @include border-radius(50%, 50%);
   }
-  padding-top:15px;
 }
 
 
@@ -68,6 +67,10 @@ footer {
   @include border-radius(100px);
 }
 
+.txt-light {
+  font-weight: 400;
+}
+
 /* Plus grand que 550 */
 @media (min-width: 550px) {
   .first {
@@ -80,7 +83,9 @@ footer {
 
 /* Plus grand que 750 */
 @media (min-width: 750px) {
-
+  .socials {
+      padding-top:15px;
+  }
 }
 
 /* Plus grand que 1000 */
