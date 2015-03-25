@@ -7,18 +7,20 @@ footer {
   padding-top:2.5rem;
 }
 
-h5 {
-  font-weight: 400;
-  font-family: $font-family;
-  a {
-    color: #fff;
-    text-decoration: none;
-    &:hover {
+.home {
+  h5 {
+    font-size: 2.1rem; line-height: 1.0;
+    font-weight: 400;
+    font-family: $font-family;
+    a {
       color: #fff;
-      text-decoration: underline;
+      text-decoration: none;
+      &:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
     }
   }
-
 }
 
 .first {
@@ -29,14 +31,13 @@ h5 {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .social {
-  width: 2em;
-  height: 2em;
-  line-height: 2em;
+  width: 1.7em;
+  height: 1.7em;
+  line-height: 1.7em;
   border: 3px solid #fff;
   color:#fff;
   text-align:center;
   @include border-radius(50%, 50%);
-
 }
 
 /* Skills
@@ -59,11 +60,20 @@ h5 {
   section {
     padding:170px 0;
   }
+  .social {
+    width: 1.7em;
+    height: 1.7em;
+    line-height: 1.7em;
+  }
 }
 
 /* Bigger than 750 */
 @media (min-width: 750px) {
-  
+  .social {
+    width: 1.7em;
+    height: 1.7em;
+    line-height: 1.7em;
+  }
 }
 
 /* Bigger than 1000 */
@@ -74,5 +84,15 @@ h5 {
     .uxdesign-img {
     margin-bottom: 0;
   }
+  .social {
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+  }
 
+  .home {
+    h5 {
+      font-size: 2.3rem; line-height: 1.0;
+    }
+  }
 }
