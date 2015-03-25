@@ -9,7 +9,6 @@ footer {
 
 .home {
   h5 {
-    font-size: 2.1rem; line-height: 1.0;
     font-weight: 400;
     font-family: $font-family;
     a {
@@ -52,7 +51,7 @@ footer {
   @include border-radius(100px);
 }
 
-/* Bigger than 550 */
+/* Plus grand que 550 */
 @media (min-width: 550px) {
   .first {
     padding-bottom:0px;
@@ -67,7 +66,7 @@ footer {
   }
 }
 
-/* Bigger than 750 */
+/* Plus grand que 750 */
 @media (min-width: 750px) {
   .social {
     width: 1.7em;
@@ -76,7 +75,7 @@ footer {
   }
 }
 
-/* Bigger than 1000 */
+/* Plus grand que 1000 */
 @media (min-width: 1000px) {
   body {
     font-size: 1.8em;
@@ -88,11 +87,5 @@ footer {
     width: 2em;
     height: 2em;
     line-height: 2em;
-  }
-
-  .home {
-    h5 {
-      font-size: 2.3rem; line-height: 1.0;
-    }
   }
 }
