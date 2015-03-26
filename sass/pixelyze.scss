@@ -8,9 +8,11 @@
 
 ------------------------------*/
 
-@import "compass";					// Compass
-@import "vendor/normalize";			// Reset CSS
-@import "ui/color";					// Google Color Palette
-@import "ui/typography";			// Typography
-@import "base/skeleton";			// Skeleton is a lightweight CSS framework
-@import "base/custom";				// Custom CSS
+@import "compass";									// Compass
+@import "vendor/normalize"; $normalize: true;		// Reset CSS		
+@import "ui/color";									// Google Color Palette
+@import "ui/typography";							// Typography
+@import "base/skeleton";							// Skeleton is a lightweight CSS framework
+@import "base/custom";								// Custom CSS
+
+//<link href='http://fonts.googleapis.com/css?family=Antic+Slab|Handlee|Julius+Sans+One|Sacramento|Amatic+SC' rel='stylesheet' type='text/css'>

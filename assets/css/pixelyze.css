@@ -4058,12 +4058,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1 {
-  font-size: 4.0rem;
+  font-size: 3.6rem;
   line-height: 1.2;
   letter-spacing: -.1rem; }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 3.4rem;
   line-height: 1.25;
   letter-spacing: -.1rem; }
 
@@ -4078,7 +4078,7 @@ h4 {
   letter-spacing: -.08rem; }
 
 h5 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   letter-spacing: -.05rem; }
 
@@ -4399,7 +4399,7 @@ footer {
 /* Skills
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .uxdesign, .uxdesign img {
-  margin-bottom: 15px; }
+  margin-bottom: 30px; }
 
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -4410,6 +4410,9 @@ footer {
 
 .txt-light {
   font-weight: 400; }
+
+.txt-xlight {
+  font-weight: 200; }
 
 /* Plus grand que 550 */
 @media (min-width: 550px) {
