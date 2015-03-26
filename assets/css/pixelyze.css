@@ -4376,6 +4376,8 @@ hr {
   margin-bottom: 30px; }
 
 .works .description {
+  position: relative;
+  display: block;
   padding: 20px;
   margin-left: 0px; }
 
@@ -4402,13 +4404,101 @@ img {
   border-width: 35px;
   margin-left: -35px; }
 
-.closeable {
-  cursor: pointer;
-  overflow: hidden;
-  transition: height 1s ease; }
+html {
+  background-color: #C9353B; }
 
-.closeable.close {
-  height: 2em; }
+.open-close-button {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border: 0.1em solid #fff;
+  margin: 2em 45%;
+  font-size: 3em;
+  border-radius: 50%;
+  position: relative;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+  .open-close-button:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 80%;
+    height: 6%;
+    left: 10%;
+    top: 47%; }
+  .open-close-button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 6%;
+    height: 80%;
+    left: 47%;
+    top: 10%; }
+  .open-close-button.open {
+    background-color: #fff;
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg); }
+    .open-close-button.open:after {
+      background-color: #C9353B; }
+    .open-close-button.open:before {
+      background-color: #C9353B; }
+
+.expanded.expander {
+  background-color: #fff;
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg); }
+  .expanded.expander:after {
+    background-color: #000; }
+  .expanded.expander:before {
+    background-color: #000; }
+
+.expander {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 4px solid #000;
+  font-size: 3em;
+  border-radius: 50%;
+  position: relative;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: absolute;
+  top: 5;
+  right: 5px; }
+  .expander:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #000;
+    width: 80%;
+    height: 6%;
+    left: 10%;
+    top: 47%; }
+  .expander:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #000;
+    width: 6%;
+    height: 80%;
+    left: 47%;
+    top: 10%; }
 
 /* Social
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

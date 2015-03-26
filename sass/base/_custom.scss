@@ -28,6 +28,8 @@
   margin-bottom:30px;
 }
 .works .description {
+  position:relative;
+  display: block;
   padding:20px;
   margin-left:0px;
    //@include border-radius(15px);
@@ -45,13 +47,107 @@ img {display:block;}
 
 .arrow:after {@include arrow;}
 
-.closeable {
-  cursor: pointer;
-  overflow: hidden;
-  transition: height 1s ease;
-}
-.closeable.close {
+
+$color: #C9353B;
+$contrast: #fff;
+$transition-duration: 0.5s;
+
+html {background-color: $color;}
+
+.open-close-button {
+  display: inline-block;
+  width: 2em;
   height: 2em;
+  border: 0.1em solid $contrast;
+  margin: 2em 45%;
+  font-size: 3em;
+  border-radius: 50%;
+  position: relative;
+  @include transition($transition-duration);
+  @include translateZ(0); // Force 3D context.
+  
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: $contrast;
+    width: 80%;
+    height: 6%;;
+    left: 10%;
+    top: 47%;
+  }
+  
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: $contrast;
+    width: 6%;
+    height: 80%;
+    left: 47%;
+    top: 10%;
+  }
+  
+  &.open {
+    background-color: $contrast;
+    &:after {
+      background-color: $color;
+    }
+    &:before {
+      background-color: $color;
+    }
+    @include rotate(225deg);  
+  }  
+}
+
+.expanded.expander{
+
+    background-color: $contrast;
+    &:after {
+      background-color: #000
+    }
+    &:before {
+      background-color: #000;
+    }
+    @include rotate(225deg);  
+  } 
+
+.expander {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 4px solid #000;
+  //margin: 2em 45%;
+  font-size: 3em;
+  border-radius: 50%;
+  position: relative;
+  @include transition($transition-duration);
+  @include translateZ(0); // Force 3D context.
+  position:absolute;
+  top:5;
+  right:5px;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #000;
+    width: 80%;
+    height: 6%;;
+    left: 10%;
+    top: 47%;
+  }
+  
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #000;
+    width: 6%;
+    height: 80%;
+    left: 47%;
+    top: 10%;
+  }
 }
 
 /* Social
