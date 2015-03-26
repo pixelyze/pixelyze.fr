@@ -4366,7 +4366,8 @@ hr {
 /* Global
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .home {
-  padding: 15px 0; }
+  padding: 15px 0;
+  position: relative; }
 
 .skills {
   padding: 70px 0; }
@@ -4374,8 +4375,40 @@ hr {
 .first {
   margin-bottom: 30px; }
 
+.works .description {
+  padding: 20px;
+  margin-left: 0px; }
+
+ul li {
+  margin-bottom: 0; }
+
 footer {
   padding-top: 2.5rem; }
+
+img {
+  display: block; }
+
+.arrow:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: #3f51b5;
+  border-width: 35px;
+  margin-left: -35px; }
+
+.closeable {
+  cursor: pointer;
+  overflow: hidden;
+  transition: height 1s ease; }
+
+.closeable.close {
+  height: 2em; }
 
 /* Social
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -4398,7 +4431,10 @@ footer {
 
 /* Skills
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.uxdesign, .uxdesign img {
+.uxdesign {
+  margin-bottom: 30px; }
+
+.uxdesign img {
   margin-bottom: 30px; }
 
 /* Shared
@@ -4419,8 +4455,11 @@ footer {
   .first {
     margin-bottom: 0px; }
 
-  .home, .skills {
-    padding: 170px 0; } }
+  .home, .skills, .quote, .works {
+    padding: 170px 0; }
+
+  .uxdesign img {
+    margin-bottom: 0; } }
 /* Plus grand que 750 */
 @media (min-width: 750px) {
   .socials {
@@ -4430,5 +4469,5 @@ footer {
   body {
     font-size: 1.8em; }
 
-  .uxdesign img {
-    margin-bottom: 0; } }
+  .uxdesign {
+    margin-bottom: 100px; } }
