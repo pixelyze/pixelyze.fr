@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "alsinaultrajada";
+    src: url("#{$alsina-font-path}alsina_ultrajada-webfont.eot");
+    src: url("#{$alsina-font-path}alsina_ultrajada-webfont.eot?#iefix") format('embedded-opentype'),
+         url("#{$alsina-font-path}alsina_ultrajada-webfont.woff2") format('woff2'),
+         url("#{$alsina-font-path}alsina_ultrajada-webfont.woff") format('woff'),
+         url("#{$alsina-font-path}alsina_ultrajada-webfont.ttf") format('truetype'),
+         url("#{$alsina-font-path}alsina_ultrajada-webfont.svg#alsinaultrajada") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
